@@ -73,4 +73,8 @@ Route::get('kacao',function(){
 
 //远程一对多
 Route::get('grade','TestController@grade');
+//预加载
+Route::get('with','TestController@with');
+//获取器，修改器
+Route::get('attr','TestController@attr');
 
