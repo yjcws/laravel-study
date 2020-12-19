@@ -67,8 +67,10 @@ Route::any('test/{moble}/{class}/{action}',function($moble,$class,$action){
 
 Route::get('kacao',function(){
 
-    return '123';
+    //return '123';
+    return view('kacao1');
+});
 
-    //return view('kacao1');
-})
+//远程一对多
+Route::get('grade','TestController@grade');
 
