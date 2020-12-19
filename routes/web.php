@@ -65,3 +65,10 @@ Route::any('test/{moble}/{class}/{action}',function($moble,$class,$action){
 });
 
 
+Route::get('kacao',function(){
+
+    return '123';
+
+    //return view('kacao1');
+})
+
