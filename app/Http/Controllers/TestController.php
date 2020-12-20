@@ -233,19 +233,19 @@ class TestController extends Controller
     {
         //一对一
         //$data = Users::find(290)->userRole;
-        /*$data = Users::with('userRole:role_id,role_name')->get(['uid','user_name', 'role_id'])->toArray();
-        dump($data);*/
+        $data = Users::with('userRole:role_id,role_name')->get(['uid','user_name', 'role_id'])->toArray();
+        dump($data);
         //反向关联
-        # $data = UserRole::find(2)->user;
+         $data = UserRole::find(2)->user;
         //一对多关联
-        /*   $data = UserRole::find(1)->userMany;
-           dump($data);*/
+           $data = UserRole::find(1)->userMany;
+           dump($data);
         //多对多关联
-        /*  $data = Student::find(2)->grade;
-          dump($data);*/
+          $data = Student::find(2)->grade;
+          dump($data);
         //远程一对多
-        /*$data = Student::find(2)->Grad;
-        dump($data);*/
+        $data = Student::find(2)->Grad;
+        dump($data);
 
 
     }
