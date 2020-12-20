@@ -24,7 +24,7 @@ return $reflector->newInstanceArgs($d_params);
 
 //测试
 
-class c {
+class C {
     public $count = 20;
 }
 class A {
@@ -35,7 +35,7 @@ class A {
 }
 
 class B{
-    protected $count = l;
+    protected $count = 10;
     /*
     * B constructor.* @param int $count*/
     public function __construct(A $a,$count){
